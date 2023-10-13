@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body">
+            <div class="calc-screen">
+                <input type="text" id="result" class="">
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="clearScreen()">C</div>
+                <div class="button" onclick="appendToScreen('≠')">≠</div>
+                <div class="button" onclick="appendToScreen('%')">%</div>
+                <div class="button" onclick="appendToScreen('/')">/</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="appendToScreen('7')">7</div>
+                <div class="button" onclick="appendToScreen('8')">8</div>
+                <div class="button" onclick="appendToScreen('9')">9</div>
+                <div class="button" onclick="appendToScreen('*')">x</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="appendToScreen('4')">4</div>
+                <div class="button" onclick="appendToScreen('5')">5</div>
+                <div class="button" onclick="appendToScreen('6')">6</div>
+                <div class="button" onclick="appendToScreen('-')">-</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="appendToScreen('1')">1</div>
+                <div class="button" onclick="appendToScreen('2')">2</div>
+                <div class="button" onclick="appendToScreen('3')">3</div>
+                <div class="button" onclick="appendToScreen('+')">+</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="appendToScreen('.')">.</div>
+                <div class="button" onclick="appendToScreen('0')">0</div>
+                <div class="button" onclick="calculate()">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
